@@ -1,0 +1,109 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.timeline-section{
+	background-color: #1f2041;
+	min-height: 100vh;
+	padding: 100px 15px;
+}
+.timeline-items{
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: aquamarine;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timeline-content:hover{
+	box-shadow: 0 0 20px #00fffb,0 0 40px #0081bc;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: aqua;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-date{
+	font-size: 18px;
+	color: aqua;
+	margin:6px 0 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.timeline-content{
+    background-color: white;
+	padding: 30px;
+	border-radius: 5px;
+}
+.timeline-content h3{
+    font-size: 24px;
+	color: #1f2041;
+	margin:0 0 10px;
+	text-transform: capitalize;
+	font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.timeline-content p{
+    color: #1f2041;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+.pro{
+    text-align: center;
+    color: white;
+    padding-top: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+.proimg{
+    float: right;
+    padding-right: 60px;
+	padding-top: 20px;
+}
+
+/* responsive */
+@media(max-width: 767px){
+	.timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
+}

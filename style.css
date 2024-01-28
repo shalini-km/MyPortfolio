@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+.image{
+    float: right;
+    margin-top: 35px;
+}
+.text{
+    float: right;
+    text-align: center;
+    margin: 50px;
+    margin-top: 25px;
+    margin-right: 600px;
+    margin-left: 100px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px
+
+}
+.me{
+    margin-left: 100px;
+}
+.img2{
+    float: left;
+}
+.text2{
+    float: right;
+    color: white;
+    padding-left: 75px;
+    padding-right: 30px;
+    font-size: medium;
+    font-family:'Poppins', sans-serif;
+}
+.contact{
+    padding-top: 5px;
+    margin: 10px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+li{
+    float: right;
+    border: 1px solid #1f2041;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+li a:hover{
+    text-shadow: 0 0 20px #00fffb,0 0 40px #0081bc;
+    color:aqua;;
+}
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #1f2041;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #00fffb,
+    #080911,
+    #00fffb,
+    #111122,
+    #00fffb,
+    #191a34,
+    #00fffb,
+    #212245,
+    aqua
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.text0{
+    text-shadow: 0 0 20px #00fffb,0 0 40px #0081bc;
+}
+.viewa{
+    text-decoration: none;
+    color:deepskyblue;
+}
+button:hover{
+    background-color: white;
+    color: #1f2041;
+}
+.edu{
+    margin-top: 150px;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+.eduimg{
+    /* margin-top: 50px; */
+    float: left;
+}
+.table{
+    float: right;
+    color: white;
+    /* padding-top: 40px; */
+    overflow: hidden;
+    th,td{
+        /* padding:.25em .5em; */
+        padding: 5px;
+        text-align: left;
+        vertical-align: top;
+        font-family: 'Poppins', sans-serif;
+    }
+    th{
+        background-color:aqua;
+        color: #1f2041;
+    }
+    td{
+        background-color: #1f2041;
+        color: white;
+    }
+}
+.allrounds{
+    display: flex;
+    justify-content: space-around;
+}
+.round{
+    height: 200px;
+    width: 200px;
+    background-color:white;
+    border-radius: 100px;
+    border: 2px solid white;
+    text-align: center;
+}
+.head{
+    text-align: center;
+    color: white;
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.roundtext{
+    padding-top: 75px;
+    font-family:'Poppins', sans-serif;
+}
+.ski{
+    color: white;
+    padding-left: 150px;
+    font-family: 'Poppins', sans-serif;
+    float: left;
+}
+.skills{
+    color: white;
+    font-family:'Poppins', sans-serif;
+    /* padding-left: 270px; */
+    padding-top:40px;
+    float: left;
+}
+.star{
+    padding-right: 10px;
+}
+.fea{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    float: right;
+    padding-right: 400px;
+}
+.feature{
+    color: white;
+    font-family:'Poppins', sans-serif;
+    padding-top: 30px;
+    /* padding-left: 100px; */
+    float: right;
+}
+.round:hover{
+    background-color: aqua;
+    border:2px solid aqua;
+}
+/* newskills page */
+.cardcontainer{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-evenly;
+}
+.card1:hover{
+    box-shadow: 0 0 20px #00fffb,0 0 40px #0081bc;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.card1{
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    height: 200px;
+    width: 280px;
+    margin: 40px;
+}
+.heading{
+    font-size: 1.5rem;
+    /* margin-top: 2px; */
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+    color:#1f2041;
+}
+.description{
+    margin-top: 5px;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+    color:#323467;
+}
+.cardimg{
+    margin-left: 110px;
+    margin-top: 15px;
+    height: 50px;
+    width: 50px;
+}
+
